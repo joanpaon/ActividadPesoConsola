@@ -1,5 +1,5 @@
 <pre>
 
-> First version of the Project
+> Bugs fixed
 
 </pre>

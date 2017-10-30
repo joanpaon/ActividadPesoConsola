@@ -22,8 +22,8 @@ public class Main {
 
     public static void main(String[] args) {
         // Constantes
-        final int PESO_MIN = 1;
-        final int PESO_MAX = 10;
+        final int PESO_MIN = 0;
+        final int PESO_MAX = 250;
         final int NUM_DIAS = 7;
 
         // Locale ---> Reales con punto
@@ -44,7 +44,7 @@ public class Main {
         // Turno Persona
         for (int dia = 0; dia < NUM_DIAS; dia++) {
             // Validación de Piso
-            boolean pesoOK = true;
+            boolean pesoOK;
             do {
                 // Selección Piso
                 boolean entradaOK = true;
@@ -105,6 +105,6 @@ public class Main {
 
         // Peso Medio
         System.out.println("---");
-        System.out.printf(lcl, "Peso medio semanal ...: %.2f Kg\n", acumulador / 7);
+        System.out.printf(lcl, "Peso medio semanal ...: %.2f Kg\n", acumulador / NUM_DIAS);
     }
 }
